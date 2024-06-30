@@ -1,0 +1,17 @@
+.nav {
+	text-decoration: none;
+	color: rgb(59, 52, 52);
+	margin-left: 25px;
+	font-size: 18px;
+}
+
+.nav:hover {
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform:uppercase;
+}
+
+.navPost {
+	margin-right: 30px;
+}
