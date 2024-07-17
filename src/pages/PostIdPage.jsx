@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useFetching } from "../hooks/useFetching";
 import PostService from "../API/PostService";
 import Loader from "../components/UI/Loader/Loader";
+import s from '../styles/PostIdPage.module.css';
 
 const PostIdPage = () => {
 	const params = useParams();
@@ -35,7 +36,7 @@ const PostIdPage = () => {
 			</h1>
 			{isComLoading
 				? <Loader />
-				: <div>
+				: <div className={s.wrapper}>
 						{comments.map(comm => 
 							<div key={comm.id} style={{marginTop: 15}}>
 								<h5>{comm.email}</h5>
